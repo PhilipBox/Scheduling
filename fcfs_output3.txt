@@ -1,0 +1,69 @@
+Scheduling : FCFS
+==========================================
+<time 0> ---- System is idle ----
+<time 1> [new arrival] process 1
+<time 1> [Start] process 1
+<time 1> process 1 is running
+<time 2> [new arrival] process 2
+<time 2> process 1 is running
+<time 3> [new arrival] process 6
+<time 3>  process 1 is finished
+------------------------(Context-Switch)
+<time 3> [Start] process 2
+<time 3> process 2 is running
+<time 4> process 2 is running
+<time 5> [new arrival] process 3
+<time 5>  process 2 is finished
+------------------------(Context-Switch)
+<time 5> [Start] process 6
+<time 5> process 6 is running
+<time 6> [new arrival] process 7
+<time 6> process 6 is running
+<time 7> [new arrival] process 4
+<time 7> [new arrival] process 5
+<time 7> process 6 is running
+<time 8> process 6 is running
+<time 9>  process 6 is finished
+------------------------(Context-Switch)
+<time 9> [Start] process 3
+<time 9> process 3 is running
+<time 10> process 3 is running
+<time 11> [new arrival] process 8
+<time 11> process 3 is running
+<time 12>  process 3 is finished
+------------------------(Context-Switch)
+<time 12> [Start] process 7
+<time 12> process 7 is running
+<time 13> [new arrival] process 9
+<time 13> process 7 is running
+<time 14>  process 7 is finished
+------------------------(Context-Switch)
+<time 14> [Start] process 4
+<time 14> process 4 is running
+<time 15> [new arrival] process 10
+<time 15>  process 4 is finished
+------------------------(Context-Switch)
+<time 15> [Start] process 5
+<time 15> process 5 is running
+<time 16> process 5 is running
+<time 17>  process 5 is finished
+------------------------(Context-Switch)
+<time 17> [Start] process 8
+<time 17> process 8 is running
+<time 18> process 8 is running
+<time 19> process 8 is running
+<time 20>  process 8 is finished
+------------------------(Context-Switch)
+<time 20> [Start] process 9
+<time 20> process 9 is running
+<time 21> process 9 is running
+<time 22>  process 9 is finished
+------------------------(Context-Switch)
+<time 22> [Start] process 10
+<time 22> process 10 is running
+<time 23>  process 10 is finished
+==============================================
+Average response Time : 4.800000
+Average waiting Time : 4.800000
+Average turnaround Time : 7.000000
+Average CPU usage : 95.652174
